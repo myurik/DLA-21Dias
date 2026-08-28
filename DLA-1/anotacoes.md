@@ -1,4 +1,4 @@
-# Dia X — [Tema do desafio]
+# Dia 1 
 
 ## 🎯 Desafios do dia
 - [✅] Desafio 1: Escrever no caderno as atividades que faço desde o momento que acordo até tomar café.
