@@ -36,8 +36,8 @@ const Viagem = (distanciaTotal, precoLitro) => {
     let litrosNecessarios = distanciaTotal / 12;
     let custoViagem = litrosNecessarios * precoLitro;
 
-    console.log(`Serão necessários ${litrosNecessarios}L para realizar a viagem`);
-    console.log(`O custo total de gasolina será R$: ${custoViagem}`);
+    console.log(`Serão necessários ${litrosNecessarios.toFixed(2)}L para realizar a viagem`);
+    console.log(`O custo total de gasolina será R$: ${custoViagem.toFixed(2)}`);
 }
 
 Viagem(402, 6.85);
