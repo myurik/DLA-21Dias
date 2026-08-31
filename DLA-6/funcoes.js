@@ -3,24 +3,33 @@
 
 // Desafio 2
 function obterDiaDaSemana(numeroDia){
+    let nomeDia;
     switch(numeroDia){
         case 1:
-            return "domingo";
+            nomeDia = "domingo";
+            break;
         case 2:
-            return "segunda";
+            nomeDia = "segunda";
+            break;
         case 3:
-            return "terça";
+            nomeDia = "terça";
+            break;
         case 4:
-            return "quarta";
+            nomeDia = "quarta";
+            break;
         case 5:
-            return "quinta";
+            nomeDia = "quinta";
+            break;
         case 6:
-            return "sexta";
+            nomeDia = "sexta";
+            break;
         case 7:
-            return "sábado";
+            nomeDia = "sábado";
+            break;
         default:
-            return "Número Inválido."
+            nomeDia = "Número Inválido."
     }
+    return nomeDia;
 }
 
 // Desafio 3
