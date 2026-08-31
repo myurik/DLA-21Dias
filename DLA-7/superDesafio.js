@@ -17,17 +17,10 @@ function calcularLimiteDisponivel(){
 
 function exibirAlerta(){
     let alerta = '';
-    if(saldoContaGabriel === 0 || saldoContaVanessa ===0){
-        alerta = 'Uma das contas está sem saldo.'
-    }
-    else if (saldoContaGabriel < 0 || saldoContaVanessa < 0){
-        if (saldoContaGabriel < 0){
-            alerta += 'A conta de Gabriel está utilizando o limite. '
-        }
-        if (saldoContaVanessa < 0){
-            alerta += 'A conta de Vanessa está utilizando o limite. '
-         } 
-    }
+    if (saldoContaGabriel === 0) alerta += 'Conta de Gabriel está sem saldo. ';
+    if (saldoContaVanessa === 0) alerta += 'Conta de Vanessa está sem saldo. ';
+    if (saldoContaGabriel < 0) alerta += 'Conta de Gabriel está utilizando o limite. ';
+    if (saldoContaVanessa < 0) alerta += 'Conta de Vanessa está utilizando o limite. ';
     return alerta;
 }
 

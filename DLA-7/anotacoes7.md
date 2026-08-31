@@ -1,15 +1,15 @@
 # Dia 7 — Super Desafio: Aplicação Financeira com Limite Compartilhado
 
 ## 🎯 Desafio do dia
-- [ ] Super Desafio: Aplicação de Finanças — Criar uma aplicação com 2 contas (representadas por variáveis, já que ainda não vimos arrays/estruturas de dados) que compartilham um único limite:
-    - [ ] 1. Calcular o saldo total das contas
-    - [ ] 2. Exibir um alerta caso alguma conta esteja sem saldo ou usando o limite
-    - [ ] 3. Fazer depósito em alguma das contas
-    - [ ] 4. Efetuar débito em alguma das contas
-    - [ ] 5. Transferir valor de uma conta para outra, somente se houver saldo ou limite disponível
-    - [ ] 6. Converter o saldo de R$ para US$
-    - [ ] 7. Exibir o limite disponível das contas
-    - [ ] 8. Ao depositar usando o limite, descontar 15% do valor depositado (taxa bancária)
+- [✅] Super Desafio: Aplicação de Finanças — Criar uma aplicação com 2 contas (representadas por variáveis, já que ainda não vimos arrays/estruturas de dados) que compartilham um único limite:
+    - [✅] 1. Calcular o saldo total das contas
+    - [✅] 2. Exibir um alerta caso alguma conta esteja sem saldo ou usando o limite
+    - [✅] 3. Fazer depósito em alguma das contas
+    - [✅] 4. Efetuar débito em alguma das contas
+    - [✅] 5. Transferir valor de uma conta para outra, somente se houver saldo ou limite disponível
+    - [✅] 6. Converter o saldo de R$ para US$
+    - [✅] 7. Exibir o limite disponível das contas
+    - [✅] 8. Ao depositar usando o limite, descontar 15% do valor depositado (taxa bancária)
 
 **Regras do limite compartilhado:**
 - O limite começa sempre em 0 (variável própria pra controlar isso).
