@@ -122,5 +122,5 @@ let listaEncadeada = {
 }
 
 
-console. log(listaEncadeada. insertFirst( 'Locomotiva' ));
+console.log(listaEncadeada. insertFirst( 'Locomotiva' ));
 
