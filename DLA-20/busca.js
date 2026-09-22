@@ -27,3 +27,41 @@ console.log(buscaBinaria(numeros, 23));  // deve achar a posição 5
 console.log(buscaBinaria(numeros, 100)); // deve retornar -1
 
 console.log(buscaBinaria(nomes, 'Daniela')); // testa com strings também
+
+
+const mensagens = [
+    { nome: "Ana", mensagem: "Oi, você viu o relatório que mandei ontem?", telefone: "11999999999", data: "2025-04-01" },
+    { nome: "Bruno", mensagem: "Vamos almoçar juntos amanhã?", telefone: "11988888888", data: "2025-04-15" },
+    { nome: "Carlos", mensagem: "Segue o relatório atualizado.", telefone: "11977777777", data: "2025-04-20" },
+    { nome: "Daniela", mensagem: "Relatório final enviado. Verifique!", telefone: "11966666666", data: "2025-04-20" },
+    { nome: "Vanessa Weber", mensagem: "Está chegando ao fim do Desafio do Código Fonte TV", telefone: "12977445588", data: "2025-04-21" }
+];
+
+function buscarTodasOcorrencias(mensagens, termo, indiceAtual = 0){
+    if (indiceAtual >= mensagens.length) {
+        return []; // caso base: chegou ao fim da lista
+    }
+
+    const mensagemAtual = mensagens[indiceAtual].mensagem.toLowerCase();
+    const termoBuscado = termo.toLowerCase();
+
+    const resultadoResto = buscarTodasOcorrencias(mensagens, termo, indiceAtual + 1);
+
+    if (mensagemAtual.includes(termoBuscado)) {
+        return [indiceAtual, ...resultadoResto];
+    } else {
+        return resultadoResto;
+    }
+}
+
+function exibirMensagensEncontradas(mensagens, termo){
+    const indices = buscarTodasOcorrencias(mensagens, termo);
+
+    console.log(`${indices.length} mensagem(ns) encontrada(s) com "${termo}":`);
+    indices.forEach(i => {
+        const msg = mensagens[i];
+        console.log(`- ${msg.nome} | ${msg.telefone} | ${msg.data}`);
+    });
+}
+
+exibirMensagensEncontradas(mensagens, 'relatório');
